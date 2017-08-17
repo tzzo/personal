@@ -1,0 +1,18 @@
+body {
+	-webkit-animation: appear 200ms ease;
+	animation: appear 200ms ease;
+	font-family: 'Roboto', arial;
+    margin: 0;
+    background-color: #0090FF;
+}
+
+
+h1 {
+    font-size: 9.7vw;
+    color: white;
+    padding: 5vh;
+}
+
+.container {
+    padding: 10vh 2vw;
+}
