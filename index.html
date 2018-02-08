@@ -19,26 +19,27 @@
 
         <meta property="og:site_name" content="Konstantinos Tzoulas">
 
-
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Konstantinos Tzoulas">
         <meta name="twitter:description" content="">
         <meta name="twitter:image" content="">
         <meta name="twitter:image:alt" content="Konstantinos Tzoulas">
 
-
         <title> Konstantinos Tzoulas </title>
-        <meta name="description" content="">
+        <meta name="description" content="My name is Konstantinos Tzoulas and I like CSS.">
 
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Ubuntu" rel="stylesheet">
-
     </head>
     <body>
-
         <div class="landing">
             <h1> Hello there </h1>
         </div>
-
     </body>
+    <script>
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256);
+        var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+        document.getElementsByClassName('landing')[0].style.backgroundColor = rgb;
+    </script>
 </html>
