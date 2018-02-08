@@ -19,12 +19,18 @@ h1 {
 	font-weight: 600;
 	padding-bottom: 2vh;
 	color: white;
+	text-shadow: -3px 3px 20px rgba(0,0,0,0.5);
 }
 
 ul {
 	list-style: none;
 	text-decoration-skip: ink;
-	font-size: 3vmax;
+	font-size: 2.5vmax;
+}
+
+a {
+	color: white;
+	text-shadow: -3px 3px 15px rgba(0,0,0,0.2);
 }
 
 .landing {
