@@ -22,7 +22,7 @@
         </script>
     </head>
     <body>
-        <div class="img" id="img" onclick="playSound();"></div>
+        <div class="img" id="img" onclick="imgClick();"></div>
         <ul>
             <li> <a href="https://twitter.com/tzzoo"> Twitter </a> </li>
             <li> <a href="https://codepen.io/tzzo/"> Codepen </a> </li>
@@ -30,16 +30,22 @@
         </ul>
         <script>
             var img = document.getElementsByClassName('img')
-            var r = Math.floor(Math.random()*256);
-            var g = Math.floor(Math.random()*256);
-            var b = Math.floor(Math.random()*256);
-            var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
-            img[0].style.backgroundColor = rgb;
+            var changeColor = function(){
+                var colors = [];
+                for(i = 0; i < 3; i++) {
+                    var color = Math.floor(Math.random()*256);
+                    colors.push(color);
+                };
+                var rgb = 'rgb(' + colors[0] + ',' + colors[1] + ',' + colors[2] + ')';
+                img[0].style.backgroundColor = rgb;
+            };
 
             var audio = new Audio('./assets/zap.mp3');
-            var playSound = function() {
+            var imgClick = function() {
                 audio.play();
+                changeColor();
             };
+            changeColor();
         </script>
     </body>
 </html>
